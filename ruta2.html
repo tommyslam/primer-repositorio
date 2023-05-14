@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action=”#”>
+        <fieldset>
+       <p>
+        <legend><h1>ejemplo</h2></legend> 
+       <label for=”nombres”>Nombres</label>
+       <input type=”text” id=”nombres” placeholder=”nombres” size=”50px” minlength=”3” maxlength=”30” required>
+       </p>
+       <p>
+       <label for=”apellidos”>Apellidos</label>
+       <input type=”text” id=”apellidos” placeholder=”apellidos” size=”50px” minlength=”3” maxlength=”30” required>
+       <p>
+       <label for=”email”>Correo electr&#243;nico</label>
+       <input type=”email” id=”email” placeholder=”Correo electr&#243;nico size=”50px” required>
+       <label>Ejm, usuario@example.com</label>
+       </p>
+       <p>
+       <label for=”telefono”>Número telefónico</label>
+       <input type=”tel” id=”telefono” placeholder=”N&uacute;mero Telef&oacute;nico” pattern=”[0-9]{3}-[0-9]{3}-[0-9]{4}”>
+       <label>Ejm. 123-456-7890</label>
+       </p>
+       <p>
+       <label for=”direcci&oacute;n”>Direcci&#243;n</label>
+       <input type=”text” name=”direc” id=”direc” ” maxlength=”30” minlength=”5”  size=”50”>
+       </p>
+       <p>
+       <label for=”postal”>C&oacute;digo Postal</label>
+       <input type=”number” name=”postal” id=”postal” minlength=”3” maxlength=”6”>
+       </p>
+       <p>
+       <label for="nacimiento">Fecha de nacimiento</label>
+       <input type="date" id="nacimiento" placeholder="fecha de nacimiento">
+       </p>
+       <p>
+       <label for=”genero”>Genero</label>
+       <input type="radio" name="genero" id="femenino">femenino
+       <input type="radio" name="genero" id="masculino">masculino
+       </p>
+       <p>
+       <label for=”ocupacion”>Ocupaci&oacute;n</label>
+       <select name=”ocupación” id=”ocupación”>
+       <option value=””>Seleccione una Opci&oacute;n</option>
+       <option value=”estudiante”>Estudiante</option>
+       <option value=”abogado”>Abogado</option>
+       <option value=”ingeniero”>Ingeniero</option>
+       </p>
+       </select>
+       <p>
+       <label for="imagen">Seleccione tu imagen de perfil</label>
+       <input type="file" name="imagen" id="imagen">    
+       </p>
+       <p>
+       <label for="color">Seleccione la información que desees</label>
+       <input type="checkbox" name="deportes" id="deportes">deportes
+       <input type="checkbox" name="cocina" id="cocina">cocina
+       <input type="checkbox" name="informatica" id="informatica">informatica
+       </p>
+       <p>
+       <label for="pass">Contraseña</label>
+       <input type="password" name="pass" id="pass" pattern=".{8,}" required>
+       <label for="pass_confirm">Confirmar Contraseña</label>
+       <input type="password" name="pass_confirm" id="pass_confirm" pattern=".{8,}" required>
+       </p>
+       <p>Escribir una descripcion de tu persona</p>
+       <legend>Formulario Tomas Slaminsky</legend>
+       <textarea name="descripcion" id="descripcion cols="100" rows="10"></textarea>
+       <br>
+       </p>
+       <p>
+       <input type="submit" value="Continuar"/>
+       </p>
+</body>
+</html>

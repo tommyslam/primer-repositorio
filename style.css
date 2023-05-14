@@ -1,0 +1,56 @@
+header {
+    overflow: auto; /* establece el comportamiento del contenedor */
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+img {
+    max-width: 100px;
+    float: left; /* mueve la imagen hacia la izquierda */
+    margin: 10px 30px 10px 10px; /* añade un margen a la derecha de la imagen */
+    border-radius: 50%;
+  }
+  nav a {
+    font-family: 'Gruppo', cursive;
+  }
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h2 {
+    clear: right; /* asegura que el título esté debajo de la imagen */
+    text-decoration: none;
+    font-family: 'Bruno Ace SC', cursive;
+    color: aliceblue;
+    font-size: 20px;
+    float: right;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  ul {
+    list-style: none; /* quita los puntos de lista */
+    padding: 0; /* elimina el relleno predeterminado del navegador */
+    float: right; /* mueve el ul hacia la derecha */
+    margin: 0 10px 0 0; /* establece un margen a la izquierda del ul */
+  }
+  
+  li {
+    display: inline-block; /* muestra los elementos en una fila horizontal */
+    margin-right: 10px; /* añade un margen a la derecha de cada elemento */
+  }
+
+i {
+    color: aliceblue;
+    margin-right: 3px;
+}
+
+a h3 {
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+}
