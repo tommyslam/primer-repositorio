@@ -5,13 +5,23 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+    background-image: url("foto/fondo5.jpg");
+    background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
+    background-position: top; /* Centra la imagen en el encabezado */
+    background-repeat: no-repeat;
   }
+
+.resaltado{
+  color: #ccab3d;
+}
 
 img {
     max-width: 100px;
     float: left; /* mueve la imagen hacia la izquierda */
     margin: 10px 30px 10px 10px; /* añade un margen a la derecha de la imagen */
     border-radius: 50%;
+    border-color: #ccab3d;
+    border-style: solid;
   }
   nav a {
     font-family: 'Gruppo', cursive;
@@ -47,7 +57,7 @@ h2 {
   }
 
 i {
-    color: aliceblue;
+    color: rgb(180, 170, 40);
     margin-right: 3px;
 }
 
@@ -59,10 +69,13 @@ a h3 {
 /* RUTA.2 */
 
 form {
-    background-color: rgb(0, 0, 0);
+  background-image: url("foto/form2.jpg");
+  background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
+  background-position: top; /* Centra la imagen en el encabezado */
+  background-repeat: no-repeat;
 }
 label {
-    color: rgb(161, 233, 255);
+    color: rgb(225, 177, 18);
     background-color: rgb(0, 0, 0);
     font-size: 20px;
     border-radius: 20%;
@@ -71,12 +84,12 @@ label {
 
 h5 {
     font-size: 40px;
-    color: rgb(86, 166, 237);
+    color: rgb(225, 177, 18);
     font-family: 'Bruno Ace SC', cursive;
 }
 
 legend {
-    color: rgb(244, 249, 255);
+    color: #ccab3d;
     font-size: 30px;
     font-family: 'Righteous', cursive;
 }
