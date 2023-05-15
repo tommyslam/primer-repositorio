@@ -15,14 +15,56 @@ header {
   color: #ccab3d;
 }
 
-img {
+.img-edit {
     max-width: 100px;
     float: left; /* mueve la imagen hacia la izquierda */
     margin: 10px 30px 10px 10px; /* añade un margen a la derecha de la imagen */
     border-radius: 50%;
     border-color: #ccab3d;
     border-style: solid;
+
   }
+
+/*CONTENEDOR */
+.contenedor {
+  display: flex;
+  text-align: center;
+}
+
+a h3 {
+  color: rgb(0, 0, 0);
+  font-family: 'Bebas Neue', sans-serif;
+  text-align: center;
+}
+
+.caja {
+  /* Estilos de las cajas */
+  width: 500px;
+  height: 500px;
+  margin-right: 10px; /* Espacio entre las cajas */
+  overflow: hidden;
+}
+
+.caja img {
+  /* Estilos de la imagen */
+  max-width: 100%;
+  height: auto;
+}
+
+.caja1 {
+  width: 50px;
+}
+
+.caja .caja1img {
+  width: 400px;
+  padding: 10px;
+}
+
+.caja .caja2img {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+}
   nav a {
     font-family: 'Gruppo', cursive;
   }
@@ -59,11 +101,6 @@ h2 {
 i {
     color: rgb(180, 170, 40);
     margin-right: 3px;
-}
-
-a h3 {
-    color: black;
-    font-family: 'Bebas Neue', sans-serif;
 }
 
 /* RUTA.2 */
