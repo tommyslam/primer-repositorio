@@ -28,11 +28,17 @@ header {
 /*CONTENEDOR */
 .contenedor {
   display: flex;
+  height: 700px;
+  justify-content: center;
   text-align: center;
+  background-image: url('foto/ultttt2.jpg');
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center center;
+  overflow: hidden;
 }
 
 a h3 {
-  color: rgb(0, 0, 0);
+  color: rgb(188, 172, 0);
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
 }
@@ -41,7 +47,7 @@ a h3 {
   /* Estilos de las cajas */
   width: 500px;
   height: 500px;
-  margin-right: 10px; /* Espacio entre las cajas */
+  margin:auto; /* Espacio entre las cajas */
   overflow: hidden;
 }
 
@@ -49,21 +55,26 @@ a h3 {
   /* Estilos de la imagen */
   max-width: 100%;
   height: auto;
-}
-
-.caja1 {
-  width: 50px;
+  box-sizing: border-box;
 }
 
 .caja .caja1img {
   width: 400px;
   padding: 10px;
+  border-radius: 20%;
+  border-color: #ccab3d;
+  border-style: solid;
+  border-top: saddlebrown;
 }
 
 .caja .caja2img {
   width: 400px;
   height: 400px;
   padding: 10px;
+  border-radius: 20%;
+  border-color: #ccab3d;
+  border-style: solid;
+  border-top: saddlebrown;
 }
   nav a {
     font-family: 'Gruppo', cursive;
@@ -113,7 +124,6 @@ form {
 }
 label {
     color: rgb(225, 177, 18);
-    background-color: rgb(0, 0, 0);
     font-size: 20px;
     border-radius: 20%;
     font-family: 'Bruno Ace SC', cursive;
