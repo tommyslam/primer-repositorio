@@ -38,7 +38,7 @@ header {
 }
 
 a h3 {
-  color: rgb(188, 172, 0);
+  color: rgb(255, 255, 255);
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   transition: 0,5s;
@@ -76,8 +76,8 @@ a h3 {
 }
 
 .caja #caja1:hover {
-  width: 600px;
-  padding: 40px;
+  width: 500px;
+  padding: 30px;
   border-radius: 20%;
   border-color: #ccab3d;
   border-style: solid;
@@ -97,14 +97,18 @@ a h3 {
 }
 
 .caja #caja2:hover {
-  width: 600px;
-  height: 600px;
-  padding: 40px;
+  width: 500px;
+  height: 500px;
+  padding: 30px;
   border-radius: 20%;
   border-color: #ccab3d;
   border-style: solid;
   border-top: saddlebrown;
   transition: 0.5s;
+}
+
+.caja #caja2:hover h3{
+  font-size: 100px;
 }
 
   nav a {
@@ -115,6 +119,21 @@ a {
     text-decoration: none;
     color: aliceblue;
     font-size: 20px;
+    transition: 0.2s;
+}
+
+.nav__li:hover i{
+    text-decoration: none;
+    color: rgb(251, 249, 249);
+    font-size: 22px;
+    transition: 0.2s;
+  }
+
+  .nav__li:hover a{
+  text-decoration: none;
+  color: rgb(228, 207, 15);
+  font-size: 22px;
+  transition: 0.2s;
 }
 
 h2 {
@@ -172,16 +191,23 @@ legend {
     font-family: 'Righteous', cursive;
 }
 
-input {
-    font-size: 20px;
-}
-
 p {
     color: aliceblue;
     font-size: 20px;
 }
 
-textarea {
-    width: 60%;
-    height: 70%;
+input{
+  font-size: 20px;
+  background-color: black;
+  color: aliceblue;
+}
+select{
+  background-color: black;
+  color: aliceblue;
+}
+textarea{
+  width: 60%;
+  height: 70%;
+  background-color: black;
+  color: aliceblue;
 }
