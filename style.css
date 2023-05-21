@@ -2,17 +2,41 @@ header {
     overflow: auto; /* establece el comportamiento del contenedor */
     background-color: rgb(2, 2, 2);
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    background-image: url("foto/fondo5.jpg");
-    background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
-    background-position: top; /* Centra la imagen en el encabezado */
+    background-image: url("foto/FONDOPROYECTO.jpg");
     background-repeat: no-repeat;
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center;
+    background-attachment: fixed;
+    height: 700px;
+    text-align: center; 
   }
 
 .resaltado{
   color: #ccab3d;
+}
+
+.nav__ul{
+  margin-top: 35px;
+  position: fixed;
+  top: 30px; /* Posición vertical desde la parte superior */
+  right: 10px; /* Posición horizontal desde la parte izquierda */
+}
+
+.logo-titulo{
+  margin-top: 35px;
+  position: fixed;
+  top: 1px; /* Posición vertical desde la parte superior */
+  left: 10px; /* Posición horizontal desde la parte izquierda */
+}
+
+h1{
+  font-size: 60px;
+  color: aliceblue;
+  margin: auto;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 4px;
 }
 
 .img-edit {
@@ -31,10 +55,12 @@ header {
   height: 700px;
   justify-content: center;
   text-align: center;
-  background-image: url('foto/ultttt2.jpg');
+  background-image: url('foto/DEF.jpg');
   background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
-  background-position: center center;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 a h3 {
@@ -55,7 +81,7 @@ a h3 {
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   font-size: 50px;
-  transition: 0,5s;
+  transition: 0,8s;
 }
 
 .caja img {
@@ -82,7 +108,7 @@ a h3 {
   border-color: #ccab3d;
   border-style: solid;
   border-top: saddlebrown;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 .caja .caja2img {
@@ -167,13 +193,14 @@ i {
 /* RUTA.2 */
 
 form {
-  background-image: url("foto/form2.jpg");
+  background-image: url("foto/FORMU.jpg");
   background-size: cover; /* Ajusta la imagen al tamaño del encabezado */
-  background-position: top; /* Centra la imagen en el encabezado */
   background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 label {
-    color: rgb(225, 177, 18);
+    color: rgb(182, 139, 0);
     font-size: 20px;
     border-radius: 20%;
     font-family: 'Bruno Ace SC', cursive;
@@ -181,12 +208,12 @@ label {
 
 h5 {
     font-size: 40px;
-    color: rgb(225, 177, 18);
+    color: rgb(182, 139, 0);
     font-family: 'Bruno Ace SC', cursive;
 }
 
 legend {
-    color: #ccab3d;
+    color: rgb(182, 139, 0);
     font-size: 30px;
     font-family: 'Righteous', cursive;
 }
