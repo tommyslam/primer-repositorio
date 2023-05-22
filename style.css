@@ -1,3 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 header {
     overflow: auto; /* establece el comportamiento del contenedor */
     background-color: rgb(2, 2, 2);
@@ -35,16 +44,23 @@ h1{
   font-size: 60px;
   color: aliceblue;
   margin: auto;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Lato', sans-serif;
   letter-spacing: 4px;
+  opacity: 0;
+  transition: opacity 3.5s ease-in-out, transform 3.5s ease-in-out;
+  transform: translateX(-100%);
 }
+
+ h1.visible {
+            opacity: 1;
+        }
 
 .img-edit {
     max-width: 100px;
     float: left; /* mueve la imagen hacia la izquierda */
     margin: 10px 30px 10px 10px; /* añade un margen a la derecha de la imagen */
     border-radius: 50%;
-    border-color: #ccab3d;
+    border-color:rgb(188, 172, 0);;
     border-style: solid;
 
   }
@@ -77,7 +93,7 @@ a h3 {
 }
 
 .caja:hover{
-  color: rgb(188, 172, 0);
+  color: rgb(253, 253, 253);
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   font-size: 50px;
@@ -105,36 +121,10 @@ a h3 {
   width: 500px;
   padding: 30px;
   border-radius: 20%;
-  border-color: #ccab3d;
+  border-color: #ffffff;
   border-style: solid;
   border-top: saddlebrown;
   transition: 0.8s;
-}
-
-.caja .caja2img {
-  width: 400px;
-  height: 400px;
-  padding: 10px;
-  border-radius: 20%;
-  border-color: #ccab3d;
-  border-style: solid;
-  border-top: saddlebrown;
-  transition: 0.5s;
-}
-
-.caja #caja2:hover {
-  width: 500px;
-  height: 500px;
-  padding: 30px;
-  border-radius: 20%;
-  border-color: #ccab3d;
-  border-style: solid;
-  border-top: saddlebrown;
-  transition: 0.5s;
-}
-
-.caja #caja2:hover h3{
-  font-size: 100px;
 }
 
   nav a {

@@ -16,7 +16,7 @@
             <h2><span class="resaltado">T</span>omas <span class="resaltado">S</span>laminsky</h2>
         </a>
         </nav>
-        <h1>Bienvenidos!</h1>
+        <h1 id="titulo">Bienvenidos!</h1>
         <nav class="nav">
             <ul class="nav__ul">
                 <li class="nav__li"><i class="fa-solid fa-house"></i><a href="#">inicio</a></li>
@@ -28,9 +28,9 @@
     </header>
     <main>
     <div class="contenedor">
-    <div class="caja"><a href="ruta2.html"><img class="caja1img" id="caja1" src="foto/formulario.jpg" alt=""><h3>Formulario</h3></a></div>
-    <div class="caja"><a href="ruta2.html"><img class="caja2img" id="caja2" src="foto/caja2.jpg" alt=""><h3>Curriculum v</h3></a></div>
-    <div class="caja"><a href="ruta2.html"><img class="caja1img" id="caja1" src="foto/caja3.jpg" alt=""><h3>Animaciones</h3></a></div>
+    <div class="caja"><a href="ruta2.html" target="_blank"><img class="caja1img" id="caja1" src="foto/formulario.jpg" alt=""><h3>Formulario</h3></a></div>
+    <div class="caja"><a href="ruta2.html" target="_blank"><img class="caja1img" id="caja1" src="foto/cv.jpg" alt=""><h3>Curriculum v</h3></a></div>
+    <div class="caja"><a href="ruta2.html" target="_blank"><img class="caja1img" id="caja1" src="foto/caja3.jpg" alt=""><h3>Animaciones</h3></a></div>
     </div>
     </main>
     <footer></footer>
@@ -38,7 +38,28 @@
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
         </style>
+         <script>
+            // Función para animar el elemento h1
+            function animarTitulo() {
+                var titulo = document.getElementById("titulo");
+                titulo.style.opacity = "1";
+                titulo.style.transform = "translateX(0)";
+                titulo.classList.add("visible");
+            }
+    
+            // Llamar a la función animarTitulo después de un breve retraso
+            setTimeout(animarTitulo, 100);
+    
+            // Opcional: Agregar un retraso antes de reiniciar la animación
+            setInterval(function() {
+                var titulo = document.getElementById("titulo");
+                titulo.style.opacity = "0";
+                titulo.style.transform = "translateX(-100%)";
+                titulo.classList.remove("visible");
+                setTimeout(animarTitulo, 3500); // Reiniciar la animación después de 3.5 segundos
+            }, 9000); // Esperar 7 segundos antes de reiniciar la animación
+        </script>
 </body>
 </html>
