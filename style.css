@@ -18,7 +18,7 @@ header {
     background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
     background-position: center;
     background-attachment: fixed;
-    height: 700px;
+    height: 900px;
     text-align: center; 
   }
 
@@ -68,7 +68,7 @@ h1{
 /*CONTENEDOR */
 .contenedor {
   display: flex;
-  height: 700px;
+  height: 900px;
   justify-content: center;
   text-align: center;
   background-image: url('foto/DEF.jpg');
@@ -152,7 +152,7 @@ a {
   transition: 0.2s;
 }
 
-h2 {
+header h2 {
     clear: right; /* asegura que el título esté debajo de la imagen */
     text-decoration: none;
     font-family: 'Bruno Ace SC', cursive;
@@ -180,7 +180,36 @@ i {
     margin-right: 3px;
 }
 
-/* RUTA.2 */
+/*FOOTER*/ 
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+}
+
+.contenedor2{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.box {
+  display: block;
+  margin-right: 100px;
+  margin-left: 100px;
+  background-color: #000000;
+  text-align: center;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+
+/* RUTA.2  HTML */ 
 
 form {
   background-image: url("foto/FORMU.jpg");
