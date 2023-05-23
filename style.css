@@ -52,8 +52,8 @@ h1{
 }
 
  h1.visible {
-            opacity: 1;
-        }
+  opacity: 1;
+  }
 
 .img-edit {
     max-width: 100px;
@@ -70,7 +70,6 @@ h1{
   display: flex;
   height: 900px;
   justify-content: center;
-  text-align: center;
   background-image: url('foto/DEF.jpg');
   background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
   overflow: hidden;
@@ -84,25 +83,25 @@ a h3 {
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   transition: 0,5s;
+  font-size: 30px;
 }
+
 
 .caja {
   /* Estilos de las cajas */
-  margin:auto; /* Espacio entre las cajas */
+  margin: auto; /* Espacio entre las cajas */
   overflow: hidden;
 }
 
-.caja:hover{
-  color: rgb(253, 253, 253);
-  font-family: 'Bebas Neue', sans-serif;
-  text-align: center;
-  font-size: 50px;
-  transition: 0,8s;
+.caja:hover  h3{
+  color: #ccab3d;
+  transition: 0,3s;
 }
 
 .caja img {
   /* Estilos de la imagen */
   max-width: 100%;
+  margin: auto;
   height: auto;
   box-sizing: border-box;
 }
@@ -117,14 +116,15 @@ a h3 {
   transition: 0.5s;
 }
 
-.caja #caja1:hover {
+.caja .caja1img:hover{
   width: 500px;
+  margin: auto;
   padding: 30px;
   border-radius: 20%;
   border-color: #ffffff;
   border-style: solid;
   border-top: saddlebrown;
-  transition: 0.8s;
+  transition: 0.6s;
 }
 
   nav a {
@@ -138,14 +138,8 @@ a {
     transition: 0.2s;
 }
 
-.nav__li:hover i{
-    text-decoration: none;
-    color: rgb(251, 249, 249);
-    font-size: 22px;
-    transition: 0.2s;
-  }
 
-  .nav__li:hover a{
+  .nav__li:hover i, .nav__li:hover a{
   text-decoration: none;
   color: rgb(228, 207, 15);
   font-size: 22px;
@@ -186,6 +180,8 @@ i {
   color: white;
   padding: 20px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .contenedor2{
@@ -194,18 +190,21 @@ i {
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
 
 .box {
   display: block;
+  margin: auto;
   margin-right: 100px;
   margin-left: 100px;
   background-color: #000000;
   text-align: center;
 }
 
-footer h2 {
+footer h2, footer p{
   text-align: center;
+  font-family: 'Kanit', sans-serif;
 }
 
 
