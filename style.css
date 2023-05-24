@@ -34,7 +34,7 @@ header {
 }
 
 .logo-titulo{
-  margin-top: 35px;
+  margin-top: 24px;
   position: fixed;
   top: 1px; /* Posición vertical desde la parte superior */
   left: 10px; /* Posición horizontal desde la parte izquierda */
@@ -78,6 +78,8 @@ h1{
   background-attachment: fixed;
 }
 
+
+
 a h3 {
   color: rgb(255, 255, 255);
   font-family: 'Bebas Neue', sans-serif;
@@ -116,7 +118,7 @@ a h3 {
   transition: 0.5s;
 }
 
-.caja .caja1img:hover{
+.caja:hover .caja1img{
   width: 500px;
   margin: auto;
   padding: 30px;
@@ -186,7 +188,7 @@ i {
 
 .contenedor2{
   margin: auto;
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -255,4 +257,76 @@ textarea{
   height: 70%;
   background-color: black;
   color: aliceblue;
+}
+
+
+
+@media (max-width: 920px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .nav__ul{
+    margin-top: 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+     white-space: nowrap;
+    }
+
+    li {
+      margin-top: 10px;
+    }
+  
+    .contenedor{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 1800px;
+      overflow-x: hidden;
+     white-space: nowrap;
+    }
+    
+    .caja{
+      width: 300px;
+      overflow-x: hidden;
+     white-space: nowrap;
+    }
+    .contenedor2{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      overflow-x: hidden;
+     white-space: nowrap;
+    }
+  
+  
+    .logo{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      overflow-x: hidden;
+     white-space: nowrap;
+    }
+
+    .img-edit {
+      max-width: 60px;
+      float: left; /* mueve la imagen hacia la izquierda */
+      margin: 10px 30px 10px 10px; /* añade un margen a la derecha de la imagen */
+      border-radius: 50%;
+      border-color:rgb(188, 172, 0);;
+      border-style: solid;
+  
+    }
+    
+    nav .logo h2{
+      font-size: small;
+    }
 }
