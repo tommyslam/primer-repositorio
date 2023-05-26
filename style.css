@@ -7,6 +7,8 @@ body {
   overflow-x: hidden;
 }
 
+
+/* CONFIGURO EL HEADER*/
 header {
     overflow: auto; /* establece el comportamiento del contenedor */
     background-color: rgb(2, 2, 2);
@@ -21,6 +23,21 @@ header {
     height: 900px;
     text-align: center; 
   }
+
+  /*APARECER Y DESAPARECER EL MENU*/
+.checkbtn {
+  font-size: 30px;
+  color: aliceblue;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
 
 .resaltado{
   color: #ccab3d;
@@ -139,7 +156,6 @@ a {
     font-size: 20px;
     transition: 0.2s;
 }
-
 
   .nav__li:hover i, .nav__li:hover a{
   text-decoration: none;
@@ -262,12 +278,46 @@ textarea{
 
 
 @media (max-width: 920px) {
-  body {
+  /*MENU RESPONSIVE*/
+.checkbtn{
+  display: block;
+  }
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  top: 20px;
+  left: -100%;
+  text-align: center;
+  transition: 0.5s;
+}
+
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 10px;
+}
+
+nav ul li a{
+  font-size: 20px;
+}
+
+li a:hover, li a.active{
+  background: none;
+  color: rgb(255, 225, 0);
+}
+
+#check:checked ~ ul{
+  left: 0;
+}
+/*                  */
+body {
     max-width: 100%;
     overflow-x: hidden;
   }
   .nav__ul{
-    margin-top: 1px;
+    margin-top: 60px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -305,7 +355,12 @@ textarea{
      white-space: nowrap;
     }
   
-  
+    .logo-titulo{
+      margin-top: 10px;
+    }
+   header h2{
+    margin-top: 1px;
+   }
     .logo{
       justify-content: center;
       align-items: center;
