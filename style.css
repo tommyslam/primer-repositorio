@@ -20,7 +20,7 @@ header {
     background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
     background-position: center;
     background-attachment: fixed;
-    height: 900px;
+    height: 670px;
     text-align: center; 
   }
 
@@ -34,6 +34,7 @@ header {
   cursor: pointer;
   display: none;
 }
+
 
 #check{
   display: none;
@@ -73,19 +74,19 @@ h1{
   }
 
 .img-edit {
-    max-width: 100px;
+    max-width: 85px;
     float: left; /* mueve la imagen hacia la izquierda */
-    margin: 10px 30px 10px 10px; /* añade un margen a la derecha de la imagen */
+    margin: 1px 20px 10px 10px; /* añade un margen a la derecha de la imagen */
     border-radius: 50%;
     border-color:rgb(188, 172, 0);;
     border-style: solid;
 
   }
 
-/*CONTENEDOR */
+/*CONTENEDOR ----------------------------------------------------------------------------------------- */
 .contenedor {
   display: flex;
-  height: 900px;
+  height: 800px;
   justify-content: center;
   background-image: url('foto/DEF.jpg');
   background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
@@ -102,13 +103,13 @@ a h3 {
   font-family: 'Bebas Neue', sans-serif;
   text-align: center;
   transition: 0,5s;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 
 .caja {
   /* Estilos de las cajas */
-  margin: auto; /* Espacio entre las cajas */
+  margin: auto 60px; /* Espacio entre las cajas */
   overflow: hidden;
 }
 
@@ -126,7 +127,7 @@ a h3 {
 }
 
 .caja .caja1img {
-  width: 400px;
+  width: 300px;
   padding: 10px;
   border-radius: 20%;
   border-color: #ccab3d;
@@ -136,7 +137,7 @@ a h3 {
 }
 
 .caja:hover .caja1img{
-  width: 500px;
+  width: 400px;
   margin: auto;
   padding: 30px;
   border-radius: 20%;
@@ -153,7 +154,7 @@ a h3 {
 a {
     text-decoration: none;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 15px;
     transition: 0.2s;
 }
 
@@ -169,7 +170,7 @@ header h2 {
     text-decoration: none;
     font-family: 'Bruno Ace SC', cursive;
     color: aliceblue;
-    font-size: 20px;
+    font-size: 15px;
     float: right;
     align-items: center;
     margin-top: 40px;
@@ -202,6 +203,10 @@ i {
   justify-content: space-between;
 }
 
+footer h2{
+  font-size: 20px;
+}
+
 .contenedor2{
   margin: auto;
   flex-direction: row;
@@ -226,7 +231,7 @@ footer h2, footer p{
 }
 
 
-/* RUTA.2  HTML */ 
+/* RUTA.2  HTML ---------------------------------------------------------------------*/ 
 
 form {
   background-image: url("foto/FORMU.jpg");
@@ -276,6 +281,14 @@ textarea{
 }
 
 
+/* CV.3  HTML ---------------------------------------------------------------------ASDAS  */ 
+.hperfil img{
+  width: 300px;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+}
+
 
 @media (max-width: 920px) {
   /*MENU RESPONSIVE*/
@@ -291,6 +304,13 @@ ul{
   left: -100%;
   text-align: center;
   transition: 0.5s;
+}
+.nav{
+  width: 20px;
+}
+label i{
+  position: fixed;
+  margin: 20px 20px 20px 0px;
 }
 
 nav ul li{
@@ -318,7 +338,6 @@ body {
   }
   .nav__ul{
     margin-top: 60px;
-    justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -335,7 +354,7 @@ body {
       align-items: center;
       display: flex;
       flex-direction: column;
-      height: 1800px;
+      height: 1300px;
       overflow-x: hidden;
      white-space: nowrap;
     }
@@ -344,6 +363,7 @@ body {
       width: 300px;
       overflow-x: hidden;
      white-space: nowrap;
+     margin: 30px;
     }
     .contenedor2{
       justify-content: center;
@@ -374,7 +394,7 @@ body {
     .img-edit {
       max-width: 60px;
       float: left; /* mueve la imagen hacia la izquierda */
-      margin: 10px 30px 10px 10px; /* añade un margen a la derecha de la imagen */
+      margin: 5px 30px 10px 10px; /* añade un margen a la derecha de la imagen */
       border-radius: 50%;
       border-color:rgb(188, 172, 0);;
       border-style: solid;
@@ -384,4 +404,10 @@ body {
     nav .logo h2{
       font-size: small;
     }
+}
+
+@media (max-width: 1200px) {
+  .caja{
+    margin: auto 20px;
+  }
 }
