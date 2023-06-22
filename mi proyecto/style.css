@@ -83,6 +83,53 @@ h1{
 
   }
 
+  header h2 {
+    clear: right; /* asegura que el título esté debajo de la imagen */
+    text-decoration: none;
+    font-family: 'Bruno Ace SC', cursive;
+    color: aliceblue;
+    font-size: 15px;
+    float: right;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  ul {
+    list-style: none; /* quita los puntos de lista */
+    padding: 0; /* elimina el relleno predeterminado del navegador */
+    float: right; /* mueve el ul hacia la derecha */
+    margin: 0 10px 0 0; /* establece un margen a la izquierda del ul */
+  }
+  
+  li {
+    display: inline-block; /* muestra los elementos en una fila horizontal */
+    margin-right: 10px; /* añade un margen a la derecha de cada elemento */
+  }
+
+i {
+    color: rgb(180, 170, 40);
+    margin-right: 3px;
+}
+nav a {
+  font-family: 'Gruppo', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.nav__li:hover i, .nav__li:hover a{
+text-decoration: none;
+color: rgb(228, 207, 15);
+font-size: 22px;
+transition: 0.2s;
+}
+
+
+
 /*CONTENEDOR ----------------------------------------------------------------------------------------- */
 .contenedor {
   display: flex;
@@ -147,52 +194,6 @@ a h3 {
   transition: 0.6s;
 }
 
-  nav a {
-    font-family: 'Gruppo', cursive;
-  }
-
-a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 15px;
-    transition: 0.2s;
-}
-
-  .nav__li:hover i, .nav__li:hover a{
-  text-decoration: none;
-  color: rgb(228, 207, 15);
-  font-size: 22px;
-  transition: 0.2s;
-}
-
-header h2 {
-    clear: right; /* asegura que el título esté debajo de la imagen */
-    text-decoration: none;
-    font-family: 'Bruno Ace SC', cursive;
-    color: aliceblue;
-    font-size: 15px;
-    float: right;
-    align-items: center;
-    margin-top: 40px;
-  }
-
-  ul {
-    list-style: none; /* quita los puntos de lista */
-    padding: 0; /* elimina el relleno predeterminado del navegador */
-    float: right; /* mueve el ul hacia la derecha */
-    margin: 0 10px 0 0; /* establece un margen a la izquierda del ul */
-  }
-  
-  li {
-    display: inline-block; /* muestra los elementos en una fila horizontal */
-    margin-right: 10px; /* añade un margen a la derecha de cada elemento */
-  }
-
-i {
-    color: rgb(180, 170, 40);
-    margin-right: 3px;
-}
-
 /*FOOTER*/ 
 .footer {
   background-color: black;
@@ -228,6 +229,7 @@ footer h2{
 footer h2, footer p{
   text-align: center;
   font-family: 'Kanit', sans-serif;
+  font-size: 15px;
 }
 
 
